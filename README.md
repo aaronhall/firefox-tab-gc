@@ -1,7 +1,5 @@
-# firefox-tab-gc
-
-A minimal Firefox extension that frees memory for tabs that have been idle for
-more than 10 minutes. Useful for people like me who don't possess any tab
+**A minimal Firefox extension that frees memory for tabs that have been idle for
+more than 10 minutes.** Useful for people like me who don't possess any tab
 discipline and exhaust memory with their reckless tab usage.
 
 ## What it does
