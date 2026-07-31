@@ -11,6 +11,9 @@ function stamp(tab) {
 browser.tabs.query({}).then((tabs) => tabs.forEach(stamp));
 
 browser.tabs.onCreated.addListener((tab) => stamp(tab));
+browser.tabs.onActivated.addListener((activeInfo) => {
+  lastActive.set(activeInfo.tabId, Date.now());
+});
 browser.tabs.onRemoved.addListener((tabId) => {
   lastActive.delete(tabId);
   ourDiscarded.delete(tabId);
