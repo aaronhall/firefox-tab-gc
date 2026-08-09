@@ -9,6 +9,7 @@
   },
   "browser_action": {
     "default_title": "Tab GC",
+    "default_icon": "firefox_tab_gc_32x32_highres.png",
     "default_popup": "popup.html"
   }
 }
